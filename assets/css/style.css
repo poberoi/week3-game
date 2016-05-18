@@ -1,0 +1,77 @@
+/*general*/
+*{
+	box-sizing: border-box;
+}
+body{
+	background: white;
+	color: black;
+}
+.container{
+	width: 100%;
+	max-width: 960px;
+	margin: 0 auto;
+	clear: both;
+}
+.jumbotron{
+	background: black;
+}
+h1, h2, h3, p{
+	margin-bottom: 20px;
+}
+
+/*header*/
+#mastHead{
+	text-align: center;
+}
+#mastHead h1{
+	font-size: 30px;
+	color: red;
+}
+img.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
+/*footer*/
+footer{
+	padding: 30px 0;
+	clear: both;
+	font-size: 12px;
+	text-align: center;
+}
+
+/*main*/
+#mainContainer {
+	padding: 10px 10px;
+	width: 650px;
+	text-align: center;
+}
+.mainSection {
+	padding: 20px 20px;
+	width: 100%;
+	max-width: 49.5%;
+	float: left;
+	border: 2px dashed white;
+	height: 400px;
+}
+.mainSection ul{
+	padding: 10px 10px
+}
+.mainSection img{
+	margin-bottom: 20px;
+	width: 200px;	
+}
+
+/*sidebar*/
+.sidebar {
+	padding: 20px 20px;
+	height: 400px;
+	width: 100%;
+	max-width: 49.5%;
+	float: right;
+	border: 2px dashed white;
+}
+
+

@@ -4,24 +4,31 @@
 	<title>Auto Hangman</title>
 	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
 </head>
 <body>
-	
 	<header id="mastHead">
-		<div class="container">
-			<img src="assets/images/hangmanlogo.png" id="mainlogo" alt="logo">
+	  	<div class="container">
+		  	<img class="center" src="assets/images/hangmanlogo.gif" id="mainlogo" alt="logo">
+				<h1>Are You Ready to Play?</h1>
 		</div>
 	</header>
 
 	<div id="mainContainer" class="container">
 		<section class="mainSection">
-			<h1>Automobile Hangman</h1>
-			<img src="assets/images/car.png" id="carImage">
+			<img class="center" src="assets/images/car.png" id="carImage">
+			<ul>
+				<h2>Rules of the Game:</h2>
+				<li>You have 6 tries to guess the word</li>
+				<li>You may click ask for a hint</li>
+				<li>The words are car makes</li>
+				<li>Have fun!!!</li>
+			</ul>
 		</section>
 		<section class="sidebar">
-			<div id="game">
-				<h2>Press any key to get started</h2>
-			</div>
+				<div id="game">
+				<p>Press any character key to start playing</p>
+				</div>
 		</section>
 	</div>
 
@@ -30,7 +37,33 @@
 			<h3>Copyright 2016 Puneet Oberoi</h3>
 		</div>
 	</footer>
-	
+
+	<script type="text/javascript" src="assets/javascript/game.js"></script>
+<!-- 	<script>
+		var carMakeList = ["Ford", "Chevrolet", "Dodge", "Nissan", "Toyota", "Honda"];
+		var wordToGuess = "";
+		var dashHolder = "";
+		var guessRemain = 6;
+		var letterList = [];
+
+		// select random word from array
+		var j = Math.floor(Math.random() * carMakeList.length);
+		console.log(j);
+
+
+		wordToGuess = carMakeList[j];
+		
+		for ( i=0; i<wordToGuess.length; i++){
+			dashHolder.push = "-";
+		}
+		console.log(dashHolder);
+
+
+
+		// create word placeholder with dashes
+
+</script> -->
+
 
 </body>
 </html>
