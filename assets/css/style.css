@@ -3,6 +3,7 @@
 	box-sizing: border-box;
 }
 body{
+	font-family: "Aclonica", times, sans-serif;
 	background: black;
 	color: white;
 }
@@ -42,6 +43,7 @@ img.center {
 
 /*footer*/
 footer{
+	font-family: "Times New Roman", times, serif;
 	padding: 30px 0;
 	clear: both;
 	font-size: 12px;
@@ -60,22 +62,26 @@ footer{
 	max-width: 49.5%;
 	float: left;
 	border: 2px dashed white;
-	height: 460px;
+	height: 500px;
 }
 
 #carImage{
 	margin-bottom: 20px;
-	width: 200px;	
+	width: 200px;
+	height: 100px;	
 }
 
 /*sidebar*/
 .sidebar {
 	padding: 20px 20px;
-	height: 460px;
+	height: 500px;
 	width: 100%;
 	max-width: 49.5%;
 	float: right;
 	border: 2px dashed white;
+}
+#game{
+	padding-top: 50px;
 }
 
 
