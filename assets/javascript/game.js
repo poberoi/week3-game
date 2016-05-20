@@ -118,6 +118,7 @@ var word = {
 		word.dashCreate();
 		word.writeHtml();
 		guessRemain = 6;
+		console.log(word.wordToGuess);
 
 	}
 };
@@ -133,6 +134,7 @@ if (x){
 	console.log(word.wordToGuess);
   document.onkeyup = function(event){
 		word.userGuess = String.fromCharCode(event.keyCode).toLowerCase();
+		
 		for (i=0; i<word.letterList.length; i++){
 			if (word.letterList.charAt(i) == word.userGuess){
 				alert("You have chosen this letter already");
