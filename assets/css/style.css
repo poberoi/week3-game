@@ -28,7 +28,10 @@ ol{
 }
 #mastHead h1{
 	font-size: 30px;
-	color: red;
+}
+#mastHead img{
+	width: 960px;
+	height: 150px;
 }
 img.center {
     display: block;
@@ -57,13 +60,13 @@ footer{
 	max-width: 49.5%;
 	float: left;
 	border: 2px dashed white;
-	height: 400px;
+	height: 460px;
 }
 .mainsection h2{
 	margin-bottom: 0px;
 } 
 
-.mainSection img{
+#carImage{
 	margin-bottom: 20px;
 	width: 200px;	
 }
@@ -71,7 +74,7 @@ footer{
 /*sidebar*/
 .sidebar {
 	padding: 20px 20px;
-	height: 400px;
+	height: 460px;
 	width: 100%;
 	max-width: 49.5%;
 	float: right;

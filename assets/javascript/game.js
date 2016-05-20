@@ -127,6 +127,9 @@ var wins = 0;
 var guessRemain = 6;
 var holder = "";
 var x = confirm("Would You Like to play?");
+var winAudio = new Audio("assets/audio/applause.wav");
+var loseAudio = new Audio("assets/audio/fail-trombone-02.mp3");
+var errorAudio = new Audio("assets/audio/BikeHorn.wav");
 if (x){
 	word.getWord();
 	word.dashCreate();
@@ -137,6 +140,7 @@ if (x){
 		
 		for (i=0; i<word.letterList.length; i++){
 			if (word.letterList.charAt(i) == word.userGuess){
+				errorAudio.play();
 				alert("You have chosen this letter already");
 				return;
 			}
@@ -149,6 +153,7 @@ if (x){
 			} 
 		}
 		if (word.dashHolder.join("") == word.wordToGuess){
+			winAudio.play();
 			alert("Awesome!! You got it: " + word.wordToGuess);
 			wins++;
 			word.changeImage();
@@ -160,6 +165,7 @@ if (x){
 			guessRemain--;
 		}
 		if (guessRemain<0){
+			loseAudio.play();
 			alert("Sorry you lose!");
 			word.wordReset();
 		}
