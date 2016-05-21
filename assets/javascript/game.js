@@ -6,119 +6,116 @@ var word = {
 	letterList: "",
 	userGuess: "",
 	getWord: function(){
-		word.wordToGuess = word.carMakeList[Math.floor(Math.random() * word.carMakeList.length)];
+		this.wordToGuess = this.carMakeList[Math.floor(Math.random() * this.carMakeList.length)];
 	},
 	dashCreate: function(){
-		for (i=0; i<word.wordToGuess.length; i++){
-			word.dashHolder[i] = "-";
+		for (i=0; i<this.wordToGuess.length; i++){
+			this.dashHolder[i] = "-";
 		}
 	},
 	addLetter: function(){
-		word.letterList = word.letterList + word.userGuess
-	},
-	checkMatch: function(){
-
+		this.letterList = this.letterList + this.userGuess
 	},
 	writeHtml: function(){
 		var html = "<p>Press any character key to start playing</p>" +
 	  "<p>Wins:</p>" + 
 	  "<p>" + wins + "</p>" +
 	  "<p>Current Word: </p>" + 
-	  "<p>" + word.dashHolder.join("") + "</p>" +
+	  "<p>" + this.dashHolder.join("") + "</p>" +
 	  "<p>Number of Guesses Remaining: </p>" + 
 	  "<p>" + guessRemain + "</p>" +
 	  "<p>Letters already guessed: </p>" + 
-	  "<p>" + word.letterList + "</p>";
+	  "<p>" + this.letterList + "</p>";
   document.querySelector('#game').innerHTML = html;
 	},
 	changeImage: function(){
-		if (word.wordToGuess == "ford"){
+		if (this.wordToGuess == "ford"){
 			document.getElementById("carImage").src="assets/images/FordLogo.png"
 		}
-		if (word.wordToGuess == "chevrolet"){
+		if (this.wordToGuess == "chevrolet"){
 			document.getElementById("carImage").src="assets/images/ChevyLogo.png"
 		} 
-		if (word.wordToGuess == "dodge"){
+		if (this.wordToGuess == "dodge"){
 			document.getElementById("carImage").src="assets/images/DodgeLogo.png"
 		}
-		if (word.wordToGuess == "nissan"){
+		if (this.wordToGuess == "nissan"){
 			document.getElementById("carImage").src="assets/images/NissanLogo.png"
 		}
-		if (word.wordToGuess == "toyota"){
+		if (this.wordToGuess == "toyota"){
 			document.getElementById("carImage").src="assets/images/ToyotaLogo.png"
 		}
-		if (word.wordToGuess == "honda"){
+		if (this.wordToGuess == "honda"){
 			document.getElementById("carImage").src="assets/images/HondaLogo.png"
 		}
-		if (word.wordToGuess == "bmw"){
+		if (this.wordToGuess == "bmw"){
 			document.getElementById("carImage").src="assets/images/BmwLogo.png"
 		}
-		if (word.wordToGuess == "acura"){
+		if (this.wordToGuess == "acura"){
 			document.getElementById("carImage").src="assets/images/AcuraLogo.png"
 		}
-		if (word.wordToGuess == "infiniti"){
+		if (this.wordToGuess == "infiniti"){
 			document.getElementById("carImage").src="assets/images/InfinitiLogo.png"
 		}
-		if (word.wordToGuess == "lexus"){
+		if (this.wordToGuess == "lexus"){
 			document.getElementById("carImage").src="assets/images/LexusLogo.png"
 		} 
-		if (word.wordToGuess == "mercedes"){
+		if (this.wordToGuess == "mercedes"){
 			document.getElementById("carImage").src="assets/images/MercedesLogo.png"
 		}
-		if (word.wordToGuess == "audi"){
+		if (this.wordToGuess == "audi"){
 			document.getElementById("carImage").src="assets/images/AudiLogo.png"
 		}
-		if (word.wordToGuess == "buick"){
+		if (this.wordToGuess == "buick"){
 			document.getElementById("carImage").src="assets/images/BuickLogo.png"
 		}
-		if (word.wordToGuess == "cadillac"){
+		if (this.wordToGuess == "cadillac"){
 			document.getElementById("carImage").src="assets/images/CadillacLogo.png"
 		}
-		if (word.wordToGuess == "fiat"){
+		if (this.wordToGuess == "fiat"){
 			document.getElementById("carImage").src="assets/images/FiatLogo.png"
 		}
-		if (word.wordToGuess == "gmc"){
+		if (this.wordToGuess == "gmc"){
 			document.getElementById("carImage").src="assets/images/GmcLogo.png"
 		}
-		if (word.wordToGuess == "hummer"){
+		if (this.wordToGuess == "hummer"){
 			document.getElementById("carImage").src="assets/images/HummerLogo.png"
 		}
-		if (word.wordToGuess == "hyundai"){
+		if (this.wordToGuess == "hyundai"){
 			document.getElementById("carImage").src="assets/images/HyundaiLogo.jpg"
 		} 
-		if (word.wordToGuess == "jaguar"){
+		if (this.wordToGuess == "jaguar"){
 			document.getElementById("carImage").src="assets/images/JaguarLogo.png"
 		}
-		if (word.wordToGuess == "jeep"){
+		if (this.wordToGuess == "jeep"){
 			document.getElementById("carImage").src="assets/images/JeepLogo.png"
 		}
-		if (word.wordToGuess == "kia"){
+		if (this.wordToGuess == "kia"){
 			document.getElementById("carImage").src="assets/images/KiaLogo.png"
 		}
-		if (word.wordToGuess == "volvo"){
+		if (this.wordToGuess == "volvo"){
 			document.getElementById("carImage").src="assets/images/VolvoLogo.png"
 		}
-		if (word.wordToGuess == "lincoln"){
+		if (this.wordToGuess == "lincoln"){
 			document.getElementById("carImage").src="assets/images/LincolnLogo.png"
 		}
-		if (word.wordToGuess == "mazda"){
+		if (this.wordToGuess == "mazda"){
 			document.getElementById("carImage").src="assets/images/MazdaLogo.png"
 		}
-		if (word.wordToGuess == "mini"){
+		if (this.wordToGuess == "mini"){
 			document.getElementById("carImage").src="assets/images/MiniLogo.jpg"
 		}
-		if (word.wordToGuess == "subaru"){
+		if (this.wordToGuess == "subaru"){
 			document.getElementById("carImage").src="assets/images/SubaruLogo.png"
 		}
 	},
 	wordReset: function(){
-		word.letterList = "";
-		word.dashHolder = [];
-		word.getWord();
-		word.dashCreate();
-		word.writeHtml();
+		this.letterList = "";
+		this.dashHolder = [];
+		this.getWord();
+		this.dashCreate();
+		this.writeHtml();
 		guessRemain = 6;
-		console.log(word.wordToGuess);
+		console.log(this.wordToGuess);
 
 	}
 };
